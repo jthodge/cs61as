@@ -53,7 +53,11 @@ I love to put one foot in front of the other for a very long time.
 
 
 ;; Exercise 2b - Define fizzbuzz
-
+(define (fizzbuzz number)
+  (cond ((= 0 (remainder number 15)) `fizzbuzz)
+        ((= 0 (remainder number 5)) `buzz)
+        ((= 0 (remainder number 3)) `fizz)
+        (else number)))
 
 ;; Exercise 3 - Why did the Walrus cross the Serengeti?
 
