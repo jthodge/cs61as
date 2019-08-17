@@ -64,12 +64,14 @@ I love to put one foot in front of the other for a very long time.
 #|
 Because...I am the walrus??
 
-
 |#
 
 ;; Exercise 4 - new-if vs if
 
 #|
-Your answer here
+`new-if` is failing, because each example's `then-case` is running, despite 
+the conditional test being `#f`. This is causing a recursive infinite loop and division by zero for each example, respectively.
+
+This could mean that the order `what-if` evaluates procedure arguments is different from normal `if` in some way. Perhaps `what-if` evaluates each expression before testing them. This would perform each infinite loop/division by zero before the `if` comparison is made, which means that the `if` comparisoin is never made. To contrast, perhaps `if` only evaluates the expressions in the block _after_ the test condition is proven `#t`.
 
 |#
