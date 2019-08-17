@@ -44,7 +44,12 @@ I love to put one foot in front of the other for a very long time.
 (define (sum-of-squares x y) (+ (square x) (square y)))  
 
 ;; Exercise 2a - Define can-drive
-
+(define (can-drive age)
+  (if (number? age)
+    (if (< age 16)
+    `(Not yet)
+    `(Good to go))
+  `(Input is not a number)))
 
 
 ;; Exercise 2b - Define fizzbuzz
