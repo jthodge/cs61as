@@ -62,7 +62,7 @@ I love to put one foot in front of the other for a very long time.
 ;; Exercise 3 - Why did the Walrus cross the Serengeti?
 
 #|
-Your answer here
+Because...I am the walrus??
 
 
 |#
